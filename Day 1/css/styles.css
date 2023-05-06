@@ -1,0 +1,38 @@
+html {
+  background-color: #232323;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: #fafafa;
+}
+
+h3 {
+  display: block;
+}
+
+.img-container {
+  display: flex;
+  align-items: flex-end;
+  width: 50px;
+  height: 570px;
+  padding: 0 15px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selected {
+  width: 800px;
+}
