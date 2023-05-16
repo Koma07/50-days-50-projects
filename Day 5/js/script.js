@@ -9,10 +9,9 @@ function time() {
     blur--;
     percentage.innerHTML = `${load}%`;
     imgContainer.style.filter = `blur(${blur}px)`;
-    console.log(time);
     if (load == 100) {
       percentage.style.opacity = "0%";
-      clearInterval();
+      clearInterval(time);
     }
   }
 }
