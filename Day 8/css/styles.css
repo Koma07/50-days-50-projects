@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #4682b4;
+}
+
+h1 {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: #add8e6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 390px;
+  height: 450px;
+  color: #fff;
+  background-color: #2a4e6c;
+  border-radius: 5px;
+}
+
+#wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-box {
+  width: 80%;
+  padding: 10px 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  caret-color: #fff; /* This property sets the color of the cursor for inputs when are focused.*/
+}
+
+.input-box:focus {
+  border-bottom: 1px solid #4d98d6;
+}
+
+.label-text {
+  position: relative;
+  top: 45px;
+  width: 80%;
+  display: block !important ;
+  text-align: left;
+  transition: top 0.2s ease;
+}
+
+.btn-login {
+  width: 80%;
+  padding: 15px;
+  background-color: #add8e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.label-text-open {
+  top: 0px !important;
+}
