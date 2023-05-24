@@ -22,9 +22,9 @@ const openText = () => {
 // Event listener to check constanly if the inputs are focused or not, using click and the blur events.
 
 // The blur event it's started when an input has lost its focus.
-emailInput.addEventListener("click", openText);
+emailInput.addEventListener("focus", openText);
 emailInput.addEventListener("blur", openText);
-passwordInput.addEventListener("click", openText);
+passwordInput.addEventListener("focus", openText);
 passwordInput.addEventListener("blur", openText);
 
 console.log(emailInput.focus());
