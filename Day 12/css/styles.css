@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: #000;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  border: 1px solid #646464;
+  border-radius: 16px;
+  background-color: #ddd;
+  width: 560px;
+  height: 90px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  /* Always remember before putting pseudo elements on a block to make the container relative, to position absolute items whithin. */
+  position: relative;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+.box::before {
+  content: "";
+  /* Always remember before putting pseudo elements on a block to make the container relative, to position absolute items whithin. */
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-image: url();
+}
+
+.box > span {
+  margin-left: 35px;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.title > h2 {
+  width: 80%;
+  white-space: nowrap;
+}
+
+.title > button {
+  width: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 25px;
+  background-color: transparent;
+  border: 1px solid #646464;
+}
+
+.active {
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.show {
+  font-weight: 700;
+}
+
+/* This style, targets specificly the icon X and hides the icon when the class active is no present on the classes of the element box. */
+.box > .title > #expand > span.material-icons.cancel {
+  display: none !important;
+}
+
+/* This style, targets specificly the X icon, and displays it when the class 'active' is present on the classes of the element box. */
+.box.active > .title > #expand > span.material-icons.cancel {
+  display: block !important;
+}
+
+/* This style, targets specificly the arrow icon, and hides when the class active is present on the classes of the element box. */
+.box.active > .title > #expand > span.material-icons.more {
+  display: none !important;
+}
