@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+/* Style for the main container using grid this time. */
+.container {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(27, 20px);
+  width: 30%;
+  margin: auto;
+  white-space: nowrap;
+  background-color: #141414;
+}
+
+/* Style of the 400 boxes of the page */
+.box {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(23, 23, 23);
+  margin: 2px auto;
+  box-shadow: 1px 1px 1px 0px #868686;
+  transition: background-color 0.5s ease;
+}

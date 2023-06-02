@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: #000;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(0deg, #5290f9 0%, #eafbff 100%);
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  width: 350px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  line-height: 70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 1s ease;
+}
+
+.menu > a {
+  position: relative;
+  text-decoration: none;
+  transition: transform 1.5s ease, filter 1s ease;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cross-1,
+.cross-2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5290f9;
+  transition: transform 0.5s ease;
+}
+
+.cross-1 {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 33px;
+}
+
+.cross-2 {
+  transform: rotate(-45deg);
+}
+
+/* Button  */
+
+.btnClose {
+  transform: rotate(90deg);
+}
+
+/* Class created to be aplied when an elements had the .btnClose class */
+.cross-1.btnClose {
+  transform: rotate(-90deg);
+  margin-left: -3px;
+}
+.cross-2.btnClose {
+  margin-top: 10px;
+}
+
+/* Menu box */
+
+.hide {
+  position: relative;
+  transform: rotateY(180deg) translateX(-150px);
+  filter: opacity(0);
+}
+
+.close {
+  width: 0px;
+}
