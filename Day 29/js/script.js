@@ -26,5 +26,5 @@ function trackDoubleClick(event) {
   heart.style.left = `${x - 30}px`;
   heart.style.top = `${y - 30}px`;
 }
-
+// Event listener to do the track of the click and make appear the heart on the position of the double click.
 imgContainer.addEventListener("dblclick", trackDoubleClick);
