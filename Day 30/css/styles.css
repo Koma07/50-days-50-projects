@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+:root {
+  --color-1: #f19661;
+  --color-2: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+  color: var(--color-2);
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+.speed-container {
+  width: 160px;
+  padding: 20px;
+  background-color: #1414143a;
+  margin-bottom: 20px;
+}
+
+.speed-container > input {
+  display: inline;
+  width: 40%;
+}
+/* Especial rule to always show the buttons to increase speed */
+input[type="number"]:not([step="any"])::-webkit-inner-spin-button,
+input[type="number"]:not([step="any"])::-webkit-outer-spin-button {
+  opacity: 1;
+}
