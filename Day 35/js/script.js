@@ -21,7 +21,6 @@ function slide() {
     idx = images.length - 1;
   }
   imgContainer.style.transform = `translateX(${-idx * 500}px)`; // Here lies all the logic of the slide. Every time the index increments its multiply by 500 wich slides the exact amount of size to each image, until 1500px wich is the last image.
-  console.log(idx * 500);
 }
 
 function resetTimer() {
