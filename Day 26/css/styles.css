@@ -33,7 +33,7 @@ body {
   justify-content: flex-end;
   width: 500px;
   transform: translateY(-2100px);
-  transition: transform 1s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .item {
@@ -62,7 +62,7 @@ body {
 .image-container {
   width: 980px;
   height: 700px;
-  transition: transform 1s ease-in;
+  transition: transform 0.5s ease-in;
 }
 .image-container > div {
   width: 100%;
