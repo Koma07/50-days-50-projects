@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --color-1: #5810ff;
+  --color-2: #300c83;
+  --color-3: #fff;
+  --color-4: #1b0846;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: var(--color-3);
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 380px;
+  height: 370px;
+  color: var(--color-3);
+  border-radius: 12px;
+  background-color: var(--color-2);
+}
+
+.box > h1 {
+  font-size: 1.4rem;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.password-result-container {
+}
+
+.password-result-container > span {
+  display: flex;
+  justify-content: flex-end;
+  width: 350px;
+  height: 50px;
+  padding: 5px;
+  background-color: var(--color-4);
+}
+
+.password-result > button {
+  border: none;
+  border-radius: 2px;
+  background-color: var(--color-1);
+  color: #000 !;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 160px;
+}
+
+.options-container > label {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#password-length {
+  width: 90px;
+  height: 30px;
+  color: #000 !important;
+}
+
+.generate-btn-container {
+  display: flex;
+  width: 330px;
+  height: 40px;
+}
+
+.generate-btn-container > button {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-1);
+  width: 100%;
+  cursor: pointer;
+}

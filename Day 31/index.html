@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 31</title>
+    <link rel="stylesheet" href="/Day 31/css/styles.css" />
+    <link rel="stylesheet" href="/Day 31/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="box">
+        <h1>Password Generator</h1>
+        <div class="password-result-container">
+          <span class="password-result">
+            <button>
+              <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+          </span>
+        </div>
+        <div class="options-container">
+          <label for="password-length"
+            >Password-length
+            <input
+              type="number"
+              name="password-length"
+              id="password-length"
+              value="20"
+              min="20"
+              max="30"
+            />
+          </label>
+          <label for="uppercase-letters"
+            >Include uppercase letters
+            <input
+              type="checkbox"
+              name="uppercase-letters"
+              id="uppercase-letters"
+            />
+          </label>
+          <label for="lowercase-letters"
+            >Include lowercase letters
+            <input
+              type="checkbox"
+              name="lowercase-letters"
+              id="lowercase-letters"
+            />
+          </label>
+          <label for="numbers"
+            >Include numbers
+            <input type="checkbox" name="numbers" id="numbers" />
+          </label>
+          <label for="symbols"
+            >Include symbols
+            <input type="checkbox" name="symbols" id="symbols" />
+          </label>
+        </div>
+        <div class="generate-btn-container">
+          <button type="submit" id="generate-btn">Generate Password</button>
+        </div>
+      </div>
+    </main>
+    <script src="/Day 31/js/script.js"></script>
+  </body>
+</html>
