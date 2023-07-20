@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  --color-1: #4340e7;
+  --color-2: #fff;
+}
+
+body {
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  padding: 20px;
+  background-color: var(--color-1);
+}
+
+.time {
+  overflow: hidden;
+  width: 600px;
+}
+
+.bar {
+  width: 600px;
+  height: 5px;
+  background-color: #ffffff;
+  animation: grow 8s linear infinite; /*The timing function used is linear, the default value it would not be precise */
+  /* align-self: flex-start; Cambia el justify content de un unico flex item */
+}
+
+/* Animation to move the top bar, acording to the time wich is the info of the employe is gonna be displayed into the web. */
+@keyframes grow {
+  0% {
+    /* width: 0px; */ /*Another way to grow the bar for the testimonials*/
+    transform: translateX(-600px);
+  }
+  100% {
+    /* width: 600px; */
+    transform: translateX(0px);
+  }
+}
+
+.testimonial {
+  width: 600px;
+  height: fit-content;
+  font-weight: 100;
+  text-align: justify;
+  line-height: 25px;
+  color: var(--color-2);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  color: var(--color-2);
+}
+
+.person-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.person-pic > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.person-name {
+  width: auto;
+  height: 40px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}

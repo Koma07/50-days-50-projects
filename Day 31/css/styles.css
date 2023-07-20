@@ -44,7 +44,12 @@ body {
   padding: 0;
 }
 
-.password-result-container {
+.final {
+  width: 100%;
+  height: auto;
+
+  line-height: 35px;
+  text-align: center;
 }
 
 .password-result-container > span {
@@ -60,7 +65,8 @@ body {
   border: none;
   border-radius: 2px;
   background-color: var(--color-1);
-  color: #000 !;
+  color: #000;
+  cursor: pointer;
 }
 
 .options-container {
